@@ -83,7 +83,7 @@ void ServiceGenerator::GenerateInterface(io::Printer* printer) {
       "  // This class should be treated as an abstract interface.\n"
       "  inline $classname$() {};\n"
       " public:\n"
-      "  virtual ~$classname$();\n");
+      "  virtual ~$classname$(); override\n");
   printer->Indent();
 
   format(
